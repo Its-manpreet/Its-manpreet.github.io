@@ -129,7 +129,7 @@ hamburger.addEventListener('click', function () {
 })
 
 // Ko-Fi
-kofiWidgetOverlay.draw('popcatdev', {
+kofiWidgetOverlay.draw('manpreet', {
 	'type': 'floating-chat',
 	'floating-chat.donateButton.text': 'Support me',
 	'floating-chat.donateButton.background-color': '#ffffff',
