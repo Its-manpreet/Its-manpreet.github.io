@@ -5,6 +5,16 @@ const projects = [
         "url": "https://dsc.gg/quoter-bot"
     },
         {
+        "name": "CDN/Media server",
+        "description": "A simple server delivering files.",
+        "url": "https://github.com/Its-manpreet/cdn-server"
+    },
+        {
+        "name": "Chat room",
+        "description": "A simple Chat room with no rules",
+        "url": "https://chat.manpreet.tk"
+    },
+        {
         "name": "Minearth SMP",
         "description": "A Minecraft SMP to have fun!",
         "url": "https://dsc.gg/chillclubop"
@@ -23,11 +33,6 @@ const projects = [
         "name": "Minearth SMP 4",
         "description": "Minearth season 2 but better!",
         "url": "https://dsc.gg/chillclubop"
-    },
-    {
-        "name": "CDN/Media server",
-        "description": "A simple server delivering files.",
-        "url": "https://github.com/Its-manpreet/cdn-server"
     },
         {
         "name": "Task automator",
