@@ -1,2 +1,0 @@
-# manpreet.tk
-website code
