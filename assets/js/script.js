@@ -55,17 +55,7 @@ sr.reveal(".left .project-image", { interval: 100, origin: 'right', distance: '1
 sr.reveal('.left .project-content', { interval: 100, origin: 'left', distance: '180px', duration: 2000 })
 
 // Projects
-const countryImage = document.querySelector('.country-image');
-const countryImages = ['country1.png', 'country2.png', 'country3.png'];
-let i = 0;
-setInterval(() => {
-	countryImage.style.opacity = 0;
-	setTimeout(() => {
-		countryImage.src = 'assets/img/' + countryImages[i];
-		countryImage.style.opacity = 1;
-	}, 500);
-	i = (i + 1) % countryImages.length;
-}, 3000);
+
 
 
 // Blob
