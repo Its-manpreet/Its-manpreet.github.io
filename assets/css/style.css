@@ -138,8 +138,7 @@ body {
 }
 
 .content {
-  min-height: 100vh;
-  min-width: 100vh;
+  min-height: 100vh
   color: white;
   padding: 40vh 9%;
   display: flex;
