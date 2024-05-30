@@ -57,7 +57,7 @@ sr.reveal('.left .project-content', { interval: 100, origin: 'left', distance: '
 // Projects
 
 
-
+const noise = new SimplexNoise();
 // Blob
 const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('canvas'), antialias: true });
 renderer.setPixelRatio(window.devicePixelRatio);
