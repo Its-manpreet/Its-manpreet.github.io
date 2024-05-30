@@ -54,10 +54,6 @@ sr.reveal('.right .project-content', { interval: 100, origin: 'right', distance:
 sr.reveal(".left .project-image", { interval: 100, origin: 'right', distance: '180px', duration: 2000 })
 sr.reveal('.left .project-content', { interval: 100, origin: 'left', distance: '180px', duration: 2000 })
 
-// Projects
-
-
-const noise = new SimplexNoise();
 // Blob
 const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('canvas'), antialias: true });
 renderer.setPixelRatio(window.devicePixelRatio);
