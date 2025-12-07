@@ -1,567 +1,338 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
+<html>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7457034095657721"
+crossorigin="anonymous"></script>
+<link rel="apple-touch-icon" sizes="180x180" href=".favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href=".favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href=".favicons/favicon-16x16.png">
+<link rel="manifest" href=".favicons/site.webmanifest">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Portfolio</title>
+<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="assets/css/util.css">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link rel="stylesheet" href="assets/css/navbar.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta2/css/all.css" />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+<!-- Website Meta Data -->
+<meta name="theme-color" content="#36393e">
+<meta name="msapplication-TileColor" content="#36393e">
+<meta name="title" content="Manpreet">
+<meta name="description"
+content="The official portfolio of Manpreet, showcasing my skills and projects that i've made">
+<meta name="keywords"
+content="developer, Manpreet, freelance developer, programming, dhaliwal, quoter, quoter discord bot">
+<meta name="language" content="English">
+<meta name="author" content="Manpreet">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://msdhaliwal.in">
+<meta property="og:title" content="Manpreet">
+<meta property="og:description"
+content="The official portfolio of Manpreet, showcasing my skills and projects that i've made">
+<meta property="og:image" content="https://msdhaliwal.in/assets/img/website.png">
+<meta property="twitter:card" content="summary_large_image">
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Website Meta Data End -->
+</head>
 
-    <title>Portfolio</title>
+<body>
+<nav id='nav' style="width: 100vw; backdrop-filter: blur(5px); box-shadow: inset 0 -1px 0 0 hsla(0,0%,100%,0.1)">
+<div class="nav-container-custom nav-wrapper">
+<div class="brand">
+<span>
+<strong class="shine" style="color: white; font-family: monospace; font-size: 30px">Portfolio</strong>
+</span>
+</div>
+<div class="hamburger" style="padding-left: 23px;">
+<span></span>
+<span></span>
+<span></span>
+</div>
+<ul class="nav-list">
+<li><a class="nav-link" data-scroll="#content-home">Home</a></li>
+<li><a class="nav-link" data-scroll="#about">About</a></li>
+<li><a class="nav-link" target="_blank" data-scroll="#projects">Projects</a> </li>
+<li><a class="nav-link" target="_blank" style="color: #007CF0" href="https://ko-fi.com/manpreet">Donate</a>
+</li>
+</ul>
+</div>
+</nav>
 
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7457034095657721"
-      crossorigin="anonymous">
-    </script>
-
-    <link rel="apple-touch-icon" sizes="180x180" href=".favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href=".favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href=".favicons/favicon-16x16.png">
-    <link rel="manifest" href=".favicons/site.webmanifest">
-
-    <!-- Website Meta Data -->
-    <meta name="theme-color" content="#36393e">
-    <meta name="msapplication-TileColor" content="#36393e">
-    <meta name="title" content="Manpreet">
-    <meta
-      name="description"
-      content="The official portfolio of Manpreet, showcasing my skills and projects that I've built.">
-    <meta
-      name="keywords"
-      content="developer, Manpreet, freelance developer, programming, Dhaliwal, Quoter, Quoter Discord bot">
-    <meta name="language" content="English">
-    <meta name="author" content="Manpreet">
-
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://msdhaliwal.in">
-    <meta property="og:title" content="Manpreet">
-    <meta
-      property="og:description"
-      content="The official portfolio of Manpreet, showcasing my skills and projects that I've built.">
-    <meta
-      property="og:image"
-      content="https://msdhaliwal.in/assets/img/website.png">
-    <meta name="twitter:card" content="summary_large_image">
-
-    <!-- Styles -->
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="assets/css/util.css">
-    <link rel="stylesheet" href="assets/css/navbar.css">
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v6.0.0-beta2/css/all.css">
-    <link
-      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
-      rel="stylesheet">
-
-    <!-- Scripts -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-
-  </head>
-
-  <body>
-    <nav
-      id="nav"
-      style="width: 100vw; backdrop-filter: blur(5px); box-shadow: inset 0 -1px 0 0 hsla(0,0%,100%,0.1);">
-      <div class="nav-container-custom nav-wrapper">
-        <div class="brand">
-          <span>
-            <strong
-              class="shine"
-              style="color: white; font-family: monospace; font-size: 30px;">
-              Portfolio
-            </strong>
-          </span>
-        </div>
-
-        <div class="hamburger" style="padding-left: 23px;">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-
-        <ul class="nav-list">
-          <li><a class="nav-link" data-scroll="#content-home">Home</a></li>
-          <li><a class="nav-link" data-scroll="#about">About</a></li>
-          <li><a class="nav-link" data-scroll="#projects">Projects</a></li>
-          <li>
-            <a
-              class="nav-link"
-              style="color: #007CF0"
-              href="https://ko-fi.com/manpreet"
-              target="_blank"
-              rel="noopener noreferrer">
-              Donate
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <!-- Hero -->
-    <div class="content" id="content-home">
-      <div class="social">
-        <a
-          href="https://discord.gg/9hp4W9YAVu"
-          id="discord"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="icon">
-          <i class="fab fa-discord"></i>
-        </a>
-        <a
-          href="https://www.instagram.com/_msdhaliwal_"
-          id="instagram"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="icon">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a
-          href="https://github.com/Its-manpreet"
-          id="github"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="icon">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-
-      <div class="text">
-        <h1 class="shine head">Manpreet</h1>
-        <p class="paragraph text-white">Software Developer.</p>
-        <button class="hero-button nav-link" data-scroll="#projects">Projects</button>
-      </div>
-    </div>
-
-    <!-- About -->
-    <section id="about" class="about">
-      <span class="line"></span>
-
-      <div class="section-label">
-        <div class="label-number project-label">1</div>
-      </div>
-
-      <div class="w-[100vw] flex justify-center items-center">
-        <div class="about-content d-flex align-center space-between row">
-          <div class="about-img">
-            <canvas id="canvas"></canvas>
-          </div>
-
-          <div class="about-text">
-            <h4 class="about-title c-white">About Me</h4>
-            <p class="about-description grey">
-              I'm Manpreet Singh Dhaliwal, primarily a backend and cloud developer and a computer enthusiast.
-              Proficient in JavaScript and Python, with a keen interest in continuously expanding my skill set.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Stats -->
-    <div class="stats">
-      <section class="statistics">
-        <div class="stats-container">
-          <div class="stats-item">
-            <p
-              data-purecounter-start="0"
-              data-purecounter-end="8"
-              class="highlight purecounter">
-              8
-            </p>
-            <span class="stats-description">Completed Projects</span>
-          </div>
-
-          <div class="stats-item">
-            <p class="highlight">
-              $
-              <span
-                data-purecounter-start="0"
-                data-purecounter-end="0"
-                class="highlight purecounter">
-                0
-              </span>
-            </p>
-            <span class="stats-description">Donations Received</span>
-          </div>
-
-          <div class="stats-item">
-            <p
-              data-purecounter-start="0"
-              data-purecounter-end="1"
-              class="highlight purecounter">
-              1
-            </p>
-            <span class="stats-description">Working Projects</span>
-          </div>
-
-          <!--
-          <div class="stats-item">
-            <p
-              data-purecounter-start="0"
-              data-purecounter-end=""
-              class="highlight purecounter"
-              id="views-count">
-            </p>
-            <span class="stats-description">Portfolio Visits</span>
-          </div>
-          -->
-        </div>
-      </section>
-    </div>
-
-<!-- Projects -->
-<section id="projects" class="projects">
-  <span
-    class="line"
-    style="background: linear-gradient(-45deg, #007CF0, #000);">
-  </span>
-
-  <div class="section-label">
-    <div class="label-number">2</div>
-  </div>
-
-  <h4 class="about-title c-white">Projects</h4>
-  <p class="about-description grey" style="font-size: 18px;">
-    Projects I've made :)
-  </p>
-
-  <!-- 01 – RIGHT (image left, text right) -->
-  <section class="right" style="overflow: hidden;">
-    <div
-      class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl
-             xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6 relative">
-
-      <!-- Image -->
-      <div class="md:order-1">
-        <img
-          class="w-full rounded-[5px] project-image"
-          style="cursor: pointer;"
-          src="/assets/img/cloudkeep.png"
-          alt="CloudKeep project screenshot">
-      </div>
-
-      <!-- Text -->
-      <div
-        class="mt-4 md:mt-0 flex justify-end flex-col text-right project-content items-end md:order-2">
-        <div class="project-overline flex justify-end gap-[71px]">
-          <div class="divider">
-            <div class="divider-line" data-collapsed="false"></div>
-            <div class="divider-notch"></div>
-          </div>
-          <div class="number text-white">01</div>
-        </div>
-
-        <div class="project-title text-white">
-          CloudKeep
-        </div>
-
-        <div class="project-description max-w-[84%]">
-          <p>
-            A cloud storage platform currently in development, with many powerful features planned.
-          </p>
-        </div>
-
-        <a
-          class="project-button mt-[14px] hover:scale-105"
-          href="https://dev.msdhaliwal.in/"
-          rel="noopener noreferrer"
-          target="_blank">
-          <span class="project-button-text">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            Visit
-          </span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- 02 – LEFT (text left, image right) -->
-  <section class="left">
-    <div
-      class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl
-             xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6 relative">
-
-      <!-- Text -->
-      <div
-        class="mt-4 md:mt-0 flex justify-end flex-col text-left project-content items-start md:order-1">
-        <div class="project-overline flex justify-end gap-[71px]">
-          <div class="divider">
-            <div class="divider-line" data-collapsed="false"></div>
-            <div class="divider-notch"></div>
-          </div>
-          <div class="number text-white">02</div>
-        </div>
-
-        <div class="project-title text-white">
-          Quoter Discord Bot
-        </div>
-
-        <div class="project-description max-w-[68%]">
-          <p>
-            A Discord bot that serves a large collection of quotes organized by different tags.
-          </p>
-        </div>
-
-        <a
-          class="project-button mt-[14px] hover:scale-105"
-          href="https://dsc.gg/quoter-bot"
-          rel="noopener noreferrer"
-          target="_blank">
-          <span class="project-button-text">
-            <i class="fab fa-discord"></i>
-            Invite
-          </span>
-        </a>
-      </div>
-
-      <!-- Image -->
-      <div class="md:order-2">
-        <img
-          class="w-full rounded-[5px] project-image"
-          style="cursor: pointer;"
-          src="/assets/img/quoter.png"
-          alt="Quoter Discord bot screenshot">
-      </div>
-    </div>
-  </section>
-
-  <!-- 03 – RIGHT (image left, text right) -->
-  <section class="right" style="overflow: hidden;">
-    <div
-      class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl
-             xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6 relative">
-
-      <!-- Image -->
-      <div class="md:order-1">
-        <img
-          class="w-full rounded-[5px] project-image"
-          style="cursor: pointer;"
-          src="/assets/img/maze.png"
-          alt="Maze solver project screenshot">
-      </div>
-
-      <!-- Text -->
-      <div
-        class="mt-4 md:mt-0 flex justify-end flex-col text-right project-content items-end md:order-2">
-        <div class="project-overline flex justify-end gap-[71px]">
-          <div class="divider">
-            <div class="divider-line" data-collapsed="false"></div>
-            <div class="divider-notch"></div>
-          </div>
-          <div class="number text-white">03</div>
-        </div>
-
-        <div class="project-title text-white">
-          Maze Solver
-        </div>
-
-        <div class="project-description max-w-[68%]">
-          <p>
-            A Python-based maze solver that implements multiple pathfinding algorithms.
-          </p>
-        </div>
-
-        <a
-          class="project-button mt-[14px] hover:scale-105"
-          href="https://github.com/Its-manpreet/maze-solver"
-          rel="noopener noreferrer"
-          target="_blank">
-          <span class="project-button-text">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            View
-          </span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- 04 – LEFT (text left, image right) -->
-  <section class="left" style="overflow: hidden;">
-    <div
-      class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl
-             xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6 relative">
-
-      <!-- Text -->
-      <div
-        class="mt-4 md:mt-0 flex justify-end flex-col text-left project-content items-start md:order-1">
-        <div class="project-overline flex justify-end gap-[71px]">
-          <div class="divider">
-            <div class="divider-line" data-collapsed="false"></div>
-            <div class="divider-notch"></div>
-          </div>
-          <div class="number text-white">04</div>
-        </div>
-
-        <div class="project-title text-white">
-          Chat Room
-        </div>
-
-        <div class="project-description max-w-[68%]">
-          <p>
-            A simple, open chat room where anyone can join the conversation.
-          </p>
-        </div>
-
-        <a
-          class="project-button mt-[14px] hover:scale-105"
-          href="https://chat.msdhaliwal.in"
-          rel="noopener noreferrer"
-          target="_blank">
-          <span class="project-button-text">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            View
-          </span>
-        </a>
-      </div>
-
-      <!-- Image -->
-      <div class="md:order-2">
-        <img
-          class="w-full rounded-[5px] project-image"
-          style="cursor: pointer;"
-          src="/assets/img/chat.png"
-          alt="Chat room project screenshot">
-      </div>
-    </div>
-  </section>
-
-  <!-- Other Projects -->
-  <h4 class="about-title c-white">Other Projects</h4>
-
-  <div class="other-projects flex items-center justify-center flex-wrap max-w-[71%]">
-    <div class="card">
-      <div class="card-content">
-        <h3 class="card-heading">Prisoners Dilemma</h3>
-        <p class="card-description">
-          A simple script to run tournaments for the split-or-steal style game.
-        </p>
-        <div class="buttons">
-          <button
-            onclick="window.open('https://github.com/Its-manpreet/Prisoners-Dilemma', '_blank')"
-            class="card-button">
-            Visit&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-content">
-        <h3 class="card-heading">CDN / Media Server</h3>
-        <p class="card-description">
-          A lightweight media server and script that lets you share files easily.
-        </p>
-        <div class="buttons">
-          <button
-            onclick="window.open('https://github.com/Its-manpreet/cdn-server', '_blank')"
-            class="card-button">
-            Visit&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-content">
-        <h3 class="card-heading">Task Automator</h3>
-        <p class="card-description">
-          A program that automatically runs JavaScript functions when specific events occur.
-        </p>
-        <div class="buttons">
-          <button
-            onclick="window.open('https://github.com/Its-manpreet/task-automation', '_blank')"
-            class="card-button">
-            Visit&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-content">
-        <h3 class="card-heading">Minearth SMP</h3>
-        <p class="card-description">
-          A public Minecraft SMP server with frequent content and feature updates.
-        </p>
-        <div class="buttons">
-          <button
-            onclick="window.open('https://dsc.gg/chillcubop', '_blank')"
-            class="card-button">
-            Visit&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="content" id="content-home";>
+<div class="social">
+<a href="https://discord.gg/9hp4W9YAVu" id="discord" target="_blank" class="icon">
+<i class="fab fa-discord"></i>
+</a>
+<a href="https://www.instagram.com/_msdhaliwal_" id="instagram" target="_blank" class="icon">
+<i class="fab fa-instagram"></i>
+</a>
+<a href="https://github.com/Its-manpreet" id="github" target="_blank" class="icon">
+<i class="fab fa-github"></i>
+</a>
+</div>
+<div class="text">
+<h1 class="shine head">Manpreet</h1>
+<p class="paragraph text-white">Software Developer.</p>
+<button class="hero-button nav-link" data-scroll="#projects">Projects</button>
+</div>
+</div>
+<section id="about" class="about">
+<span class="line"></span>
+<div>
+<div class="section-label">
+<div class="label-number project-label">1</div>
+</div>
+<div class="w-[100vw] flex justify-center items-center">
+<div class="about-content d-flex align-center space-between row">
+<div class="about-img">
+<canvas id="canvas"></canvas>
+</div>
+<div class="about-text">
+<h4 class="about-title c-white">About Me</h4>
+<p class="about-description grey">I'm Manpreet Singh Dhaliwal, a mainly backend and cloud developer and computer enthusiast. Proficient in JavaScript, python with a keen interest in expanding my skill set.</p>
+</div>
+</div>
+</div>
 </section>
+<div class="stats">
 
-    <!-- Footer -->
-    <footer>
-      <div class="footer-content">
-        <h3>Manpreet</h3>
-        <p>
-          Credit to
-          <a href="https://zero.is-a.dev" class="text-[#7289da]" target="_blank" rel="noopener noreferrer">
-            Zero Two
-          </a>
-          for most of the code.
-        </p>
-      </div>
-    </footer>
+<section class="statistics">
+<div class="stats-container">
+<div class="stats-item">
+<p data-purecounter-start="0" data-purecounter-end="5" class="highlight purecounter">8</p><span
+class="stats-description">Completed Projects</span>
+</div>
+<div class="stats-item">
+<p class="highlight">$<span data-purecounter-start="5" data-purecounter-end="0"
+class="highlight purecounter">0</span></p><span class="stats-description">Donations Received</span>
+</div>
+<div class="stats-item">
+<p data-purecounter-start="3" data-purecounter-end="1" class="highlight purecounter">1</p><span
+class="stats-description">Working Projects</span>
+</div>
+<!-- <div class="stats-item">
+<p data-purecounter-start="0" data-purecounter-end="" class="highlight purecounter" id="views-count"></p><span
+class="stats-description">Portfolio Visits</span>
+</div> -->
+</div>
+</section>
+</div>
+<section id="projects" class="projects">
+<span class="line" style="background: linear-gradient(-45deg, #007CF0, #000)"></span>
+<div class="section-label">
+<div class="label-number">2</div>
+</div>
+<h4 class="about-title c-white">Projects</h4>
+<p class="about-description grey" style="font-size: 18px;">Projects I've Made :)</p>
+<section class="right" style="overflow: hidden;">
+<div
+class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6 relative">
+<img class="w-full rounded-[5px] project-image" style="cursor:pointer;" src="/assets/img/cloudkeep.png"
+alt="project image">
+<div class="mt-4 md:mt-0 flex justify-end flex-col text-right project-content items-end">
+<div class="project-overline flex justify-end gap-[71px]">
+<div class="divider">
+<div class="divider-line" data-collapsed="false"></div>
+<div class="divider-notch"></div>
+</div>
+<div class="number text-white">01</div>
+</div>
+<div class="project-title text-white">
+CloudKeep
+</div>
+<div class="project-description max-w-[84%]">
+<p>A cloud storage site under development with lots of features planned.</p>
+</div>
+<a class="project-button mt-[14px] hover:scale-105"
+href="https://dev.msdhaliwal.in/"
+rel="noopener noreferrer" target="_blank"><span class="project-button-text"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+Visit</span></a>
+</div>
+</div>
+</section>
+<section class="left">
+<div
+class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6 relative">
+<div class="mt-4 md:mt-0 flex justify-end flex-col text-left project-content items-start">
+<div class="project-overline flex justify-end gap-[71px]">
+<div class="divider">
+<div class="divider-line" data-collapsed="false"></div>
+<div class="divider-notch"></div>
+</div>
+<div class="number text-white">02</div>
+</div>
+<div class="project-title text-white">
+Quoter discord bot
+</div>
+<div class="project-description max-w-[68%]">
+<p>A cool <a href="https://discord.com" class="text-[#7289da]">Discord</a> bot with a lot of
+quotes with different tags.</p>
+</div>
+<a class="project-button mt-[14px] hover:scale-105"
+href="https://dsc.gg/quoter-bot"
+rel="noopener noreferrer" target="_blank"><span class="project-button-text"><i class="fab fa-discord"></i>
+Invite</span></a>
+<img class="w-full rounded-[5px] project-image lsc" style="cursor:pointer;" src="/assets/img/quoter.png"
+alt="project image">
+</div>
+</div>
+</section>
+<section class="left">
+<div
+class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6 relative">
+<div class="mt-4 md:mt-0 flex justify-end flex-col text-left project-content items-start">
+<div class="project-overline flex justify-end gap-[71px]">
+<div class="divider">
+<div class="divider-line" data-collapsed="false"></div>
+<div class="divider-notch"></div>
+</div>
+<div class="number text-white">03</div>
+</div>
+<div class="project-title text-white">
+Maze solver
+</div>
+<div class="project-description max-w-[68%]">
+<p> A simple maze solver with many algorithms using python </p>
+</div>
+<a class="project-button mt-[14px] hover:scale-105" href="https://github.com/Its-manpreet/maze-solver" rel="noopener noreferrer"
+target="_blank"><span class="project-button-text"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+View</span></a>
+</div>
+<img class="w-full rounded-[5px] project-image lsc" style="cursor:pointer;" src="/assets/img/maze.png"
+alt="project image">
+</div>
+</section>
+<section class="right" style="overflow: hidden;">
+<div
+class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6 relative">
+<div class="mt-4 md:mt-0 flex justify-end flex-col text-left project-content items-start">
+<div class="project-overline flex justify-end gap-[71px]">
+<div class="divider">
+<div class="divider-line" data-collapsed="false"></div>
+<div class="divider-notch"></div>
+</div>
+<div class="number text-white">04</div>
+</div>
+<div class="project-title text-white">
+Chat room
+</div>
+<div class="project-description max-w-[68%]">
+<p>
+A simple chat room with no rules!
+</p>
+</div>
+<a class="project-button mt-[14px] hover:scale-105" href="https://chat.msdhaliwal.in" rel="noopener noreferrer"
+target="_blank"><span class="project-button-text"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+View</span></a>
+</div>
+<img class="w-full rounded-[5px] project-image lsc" style="cursor:pointer;" src="/assets/img/chat.png"
+alt="project image">
+</div>
+</section>
+<h4 class="about-title c-white">Other Projects</h4>
+<div class="other-projects flex items-center justify-center flex-wrap max-w-[71%]">
+<div class="card">
+<div class="card-content">
+<h3 class="card-heading">Prisoners Dilemma</h3>
+<p class="card-description">A simple script to run tournaments for the split or steal game</p>
+<div class="buttons">
+<button onclick="window.open('https://github.com/Its-manpreet/Prisoners-Dilemma', '_blank')"
+class="card-button">Visit&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-content">
+<h3 class="card-heading">CDN/Media server</h3>
+<p class="card-description">A simple server/script that lets you share files easily</p>
+<div class="buttons">
+<button onclick="window.open('https://github.com/Its-manpreet/cdn-server', '_blank')"
+class="card-button">Visit&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-content">
+<h3 class="card-heading">Task automator</h3>
+<p class="card-description">A program that runs js scripts on a specific event</p>
+<div class="buttons">
+<button onclick="window.open('https://github.com/Its-manpreet/task-automation', '_blank')"
+class="card-button">Visit&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-content">
+<h3 class="card-heading">Minearth SMP</h3>
+<p class="card-description">Public minecraft sever</p>
+<div class="buttons">
+<button onclick="window.open('https://dsc.gg/chillcubop', '_blank')"
+class="card-button">Visit&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer>
+<div class="footer-content">
+<h3>Manpreet</h3>
+<p>Credit to <a href="https://zero.is-a.dev" class="text-[#7289da]">Zero Two</a> for most of the code</p>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+<script>
+if (window.innerWidth > 600) {
+new PureCounter({
+selector: '.purecounter',
+start: 0,
+end: 100,
+duration: 2,
+delay: 10,
+once: true,
+repeat: false,
+decimals: 0,
+legacy: true,
+filesizing: false,
+currency: false,
+separator: false,
+});
+};
+// const updateViews = async () => {
+// const response = await fetch('https://cdn.popcat.xyz/update');
+// const res = await response.json();
+// const { count } = res;
+// const viewsCount = document.getElementById('views-count');
+// viewsCount.setAttribute('data-purecounter-end', count);
+// viewsCount.innerHTML = count;
+// }
+//updateViews();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+<script>
+VANTA.BIRDS({
+el: "#content-home",
+mouseControls: true,
+touchControls: true,
+gyroControls: true,
+minHeight: 200.00,
+minWidth: 200.00,
+scale: 1.00,
+scaleMobile: 1.00
+})
+</script>
+</script>
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r98/three.js"></script>
+<script src="assets/js/perlin.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script src="assets/js/particles.min.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
-    <script>
-      if (window.innerWidth > 600) {
-        new PureCounter({
-          selector: '.purecounter',
-          start: 0,
-          end: 100,
-          duration: 2,
-          delay: 10,
-          once: true,
-          repeat: false,
-          decimals: 0,
-          legacy: true,
-          filesizing: false,
-          currency: false,
-          separator: false
-        });
-      }
-      // const updateViews = async () => {
-      //   const response = await fetch('https://cdn.popcat.xyz/update');
-      //   const res = await response.json();
-      //   const { count } = res;
-      //   const viewsCount = document.getElementById('views-count');
-      //   viewsCount.setAttribute('data-purecounter-end', count);
-      //   viewsCount.innerHTML = count;
-      // }
-      // updateViews();
-    </script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
-    <script>
-      VANTA.BIRDS({
-        el: "#content-home",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: true,
-        minHeight: 200.00,
-        minWidth: 200.00,
-        scale: 1.00,
-        scaleMobile: 1.00
-      });
-    </script>
-
-    <script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
-    <script src="assets/js/perlin.js"></script>
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script src="https://unpkg.com/tippy.js@6"></script>
-    <script src="assets/js/particles.min.js"></script>
-    <script src="assets/js/script.js"></script>
-  </body>
 </html>
