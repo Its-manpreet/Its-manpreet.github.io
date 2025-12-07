@@ -552,6 +552,29 @@ body {
   transition: border-color 150ms ease;
 }
 
+/* Override old absolute positioning for project cards */
+.project-content {
+  position: relative !important;
+  right: auto !important;
+  left: auto !important;
+  transform: none !important;
+}
+
+.left .project-content {
+  left: auto !important;
+  right: auto !important;
+  grid-column: auto !important;
+  transform: none !important;
+}
+
+/* Keep images in their grid cells without shifting */
+.project-image,
+.left .project-image {
+  transform: none !important;
+  grid-column: auto !important;
+}
+
+
 
 /* Media Query */
 

@@ -55,33 +55,64 @@ sr.reveal(".left .project-image", { interval: 100, origin: 'right', distance: '1
 sr.reveal('.left .project-content', { interval: 100, origin: 'left', distance: '180px', duration: 2000 })
 
 // Blob
-const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('canvas'), antialias: true });
-renderer.setPixelRatio(window.devicePixelRatio);
-renderer.setSize(452, 250);
-const scene = new THREE.Scene();
-let camera = new THREE.PerspectiveCamera(27, window.innerWidth / window.innerHeight, 0.1, 1000);
-camera.position.z = 5;
-const sphere_geometry = new THREE.SphereGeometry(1, 128, 128);
-const material = new THREE.MeshNormalMaterial();
-let sphere = new THREE.Mesh(sphere_geometry, material);
-scene.add(sphere);
-const update = function () {
-	const time = performance.now() * 0.003;
-	const k = 3;
-	for (let i = 0; i < sphere.geometry.vertices.length; i++) {
-		let p = sphere.geometry.vertices[i];
-		p.normalize().multiplyScalar(1 + 0.3 * noise.perlin3(p.x * k + time, p.y * k, p.z * k));
-	}
-	sphere.geometry.computeVertexNormals();
-	sphere.geometry.normalsNeedUpdate = true;
-	sphere.geometry.verticesNeedUpdate = true;
+const canvasEl = document.getElementById('canvas');
+if (canvasEl) {
+  const renderer = new THREE.WebGLRenderer({ canvas: canvasEl, antialias: true });
+  renderer.setPixelRatio(window.devicePixelRatio);
+  renderer.setSize(452, 250);
+
+  const scene = new THREE.Scene();
+
+  const camera = new THREE.PerspectiveCamera(
+    27,
+    452 / 250,           // match renderer size
+    0.1,
+    1000
+  );
+  camera.position.z = 5;
+
+  const sphereGeometry = new THREE.SphereGeometry(1, 128, 128);
+  const material = new THREE.MeshNormalMaterial();
+  const sphere = new THREE.Mesh(sphereGeometry, material);
+  scene.add(sphere);
+
+  // Copy base positions so we can deform relative to original sphere
+  const positionAttr = sphereGeometry.attributes.position;
+  const vertexCount = positionAttr.count;
+  const basePositions = new Float32Array(positionAttr.array); // copy
+
+  const tmp = new THREE.Vector3();
+
+  function update() {
+    const time = performance.now() * 0.003;
+    const k = 3;
+
+    for (let i = 0; i < vertexCount; i++) {
+      const x0 = basePositions[i * 3];
+      const y0 = basePositions[i * 3 + 1];
+      const z0 = basePositions[i * 3 + 2];
+
+      tmp.set(x0, y0, z0);
+      tmp.normalize().multiplyScalar(
+        1 + 0.3 * noise.perlin3(tmp.x * k + time, tmp.y * k, tmp.z * k)
+      );
+
+      positionAttr.setXYZ(i, tmp.x, tmp.y, tmp.z);
+    }
+
+    positionAttr.needsUpdate = true;
+    sphereGeometry.computeVertexNormals();
+  }
+
+  function animate() {
+    update();
+    renderer.render(scene, camera);
+    requestAnimationFrame(animate);
+  }
+
+  animate();
 }
-function animate() {
-	update();
-	renderer.render(scene, camera);
-	requestAnimationFrame(animate);
-}
-requestAnimationFrame(animate);
+
 
 // Nav
 
