@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Résumé — Manpreet Singh Dhaliwal</title>
+<meta name="description" content="Résumé of Manpreet Singh Dhaliwal: computer engineering at TIET Patiala, backend and cloud development, Discord platforms.">
+<link rel="canonical" href="https://msdhaliwal.in/resume.html">
+<meta name="theme-color" content="#f3efe7">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2305060d'/%3E%3Ccircle cx='16' cy='16' r='7' fill='none' stroke='%23d7ff3f' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='16' r='2.4' fill='%23d7ff3f'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/resume.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<nav class="bar">
+  <a href="index.html">← Dhaliwal</a>
+  <button type="button" onclick="window.print()">Print / PDF</button>
+</nav>
+
+<main id="main">
+  <header>
+    <h1>Manpreet Singh Dhaliwal</h1>
+    <p class="sub">
+      Patiala, Punjab · IST ·
+      <a href="mailto:manpreetdhaliwal1482008@gmail.com">manpreetdhaliwal1482008@gmail.com</a> ·
+      +91 79019 10901 ·
+      <a href="https://msdhaliwal.in">msdhaliwal.in</a> ·
+      <a href="https://github.com/Its-manpreet">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/manpreet-dhaliwal-521b3625a">LinkedIn</a>
+    </p>
+  </header>
+
+  <section>
+    <h2>Summary</h2>
+    <p>Computer Engineering student at Thapar Institute of Engineering and Technology (class of 2030). Builds backend and cloud systems in JavaScript and Python: a Discord-verified bot serving 2,127 quotes, a SvelteKit storage app on AWS S3 and Cognito, and a cross-server Discord bridge on Bun and SQLite.</p>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="role">
+      <div>
+        <h3>Thapar Institute of Engineering and Technology (TIET)</h3>
+        <p class="stack">B.E. Computer Engineering (COE)</p>
+      </div>
+      <span class="meta">Patiala, Punjab · expected 2030</span>
+    </div>
+    <ul>
+      <li>Coursework: programming and data structures, digital logic, computer organisation, mathematics.</li>
+      <li>Working on C++ and data structures for placement tests; learning Rust alongside.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+
+    <div class="role">
+      <div>
+        <h3>Quoter — Discord bot <span class="tag">live, verified</span></h3>
+        <p class="stack">JavaScript · discord.js 14 · Node · Fuse.js · top.gg</p>
+      </div>
+      <span class="meta">2022 — present · 53 commits</span>
+    </div>
+    <ul>
+      <li>Serves 2,127 quotes from 803 authors across 67 tags through nine slash commands; verified by Discord and published on top.gg, open-sourced under MIT.</li>
+      <li>Built an inverted tag index at boot plus three Fuse.js indexes tuned per field (tags 0.3, authors 0.3, quote text 0.4 token search) so typos still resolve.</li>
+      <li>Author command enriches replies with portrait and biography from the Wikipedia pageimages API.</li>
+    </ul>
+
+    <div class="role">
+      <div>
+        <h3>CloudKeep — cloud storage</h3>
+        <p class="stack">SvelteKit · AWS S3 · AWS Cognito</p>
+      </div>
+      <span class="meta">2026 · dev build live</span>
+    </div>
+    <ul>
+      <li>Upload, download, share links and Cognito sign-in, running at dev.msdhaliwal.in.</li>
+      <li>Files go browser → S3 with presigned URLs, so bytes never pass through the application server; per-user key namespaces and a private bucket keep objects scoped to their owner.</li>
+      <li>Cognito <code>sub</code> claim acts as the tenant key, removing the need for a separate user table.</li>
+    </ul>
+
+    <div class="role">
+      <div>
+        <h3>Discord Bridge — channel linking</h3>
+        <p class="stack">JavaScript · Bun · discord.js 14 · bun:sqlite</p>
+      </div>
+      <span class="meta">2026</span>
+    </div>
+    <ul>
+      <li>Links channels between servers so two communities share one conversation; messages cross as webhooks and keep author identity, with edits and deletes in sync.</li>
+      <li>Hot path served from an in-memory <code>Map&lt;channelId, Set&lt;channelId&gt;&gt;</code> over SQLite, so relaying never touches disk per message.</li>
+      <li>Two-sided consent (<code>/allow</code>, <code>/deny</code>), sticky notices, random channel pairing and a report queue.</li>
+    </ul>
+
+    <div class="role">
+      <div>
+        <h3>Other builds</h3>
+        <p class="stack">Python · PowerShell · Docker · hardware</p>
+      </div>
+      <span class="meta">2021 — 2026</span>
+    </div>
+    <ul>
+      <li>Keyboard → controller — reads hall-effect switch signals from a keyboard and remaps them to gamepad input.</li>
+      <li>Maze Solver — generator with BFS, DFS and A* solvers drawn step by step.</li>
+      <li>Home media server — Ubuntu host running a Docker Compose stack (media, downloads, reverse proxy).</li>
+      <li>Prisoner’s Dilemma tournament runner, CDN/media file server, event-driven task automator.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <dl class="cols">
+      <dt>Languages</dt>
+      <dd>JavaScript (Node, Bun), Python, C++ (learning), Rust (learning), SQL, HTML/CSS, PowerShell; English, Hindi, Punjabi</dd>
+      <dt>Frameworks</dt>
+      <dd>discord.js, SvelteKit, Textual, Express-style Node services</dd>
+      <dt>Cloud</dt>
+      <dd>AWS S3, AWS Cognito, IAM and bucket policy, presigned URL design</dd>
+      <dt>Data</dt>
+      <dd>SQLite (bun:sqlite), in-memory index design, fuzzy search (Fuse.js)</dd>
+      <dt>Tooling</dt>
+      <dd>Git and GitHub, Docker Compose, Linux server administration, reverse proxying</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Additional</h2>
+    <ul>
+      <li>Runs and maintains a self-hosted Ubuntu server — DNS, TLS and a container stack — and publishes live coding figures on his site.</li>
+    </ul>
+  </section>
+</main>
+
+<footer><span>Last revised November 2026 · msdhaliwal.in</span></footer>
+</body>
+</html>

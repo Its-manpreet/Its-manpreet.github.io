@@ -1,0 +1,249 @@
+{
+  "generated_at": "2026-11-13T19:17:38Z",
+  "hackatime": {
+    "username": "MSDhaliwal",
+    "total_seconds": 99798,
+    "languages": [
+      {
+        "name": "JavaScript",
+        "seconds": 39006
+      },
+      {
+        "name": "Python",
+        "seconds": 34124
+      },
+      {
+        "name": "C",
+        "seconds": 8003
+      },
+      {
+        "name": "Markdown",
+        "seconds": 4431
+      },
+      {
+        "name": "JSON",
+        "seconds": 1223
+      },
+      {
+        "name": "Text",
+        "seconds": 990
+      },
+      {
+        "name": "Shell",
+        "seconds": 862
+      },
+      {
+        "name": "YAML",
+        "seconds": 462
+      },
+      {
+        "name": "TypeScript",
+        "seconds": 184
+      },
+      {
+        "name": "CSS",
+        "seconds": 9
+      }
+    ],
+    "top_language": "JavaScript",
+    "top_language_seconds": 39006,
+    "week_seconds": 9988,
+    "project_count": 14,
+    "days": [
+      {
+        "date": "2026-10-05",
+        "seconds": 0
+      },
+      {
+        "date": "2026-10-06",
+        "seconds": 0
+      },
+      {
+        "date": "2026-10-07",
+        "seconds": 120
+      },
+      {
+        "date": "2026-10-08",
+        "seconds": 2901
+      },
+      {
+        "date": "2026-10-09",
+        "seconds": 8042
+      },
+      {
+        "date": "2026-10-10",
+        "seconds": 1045
+      },
+      {
+        "date": "2026-10-11",
+        "seconds": 120
+      },
+      {
+        "date": "2026-10-12",
+        "seconds": 3530
+      },
+      {
+        "date": "2026-10-13",
+        "seconds": 240
+      },
+      {
+        "date": "2026-10-14",
+        "seconds": 1205
+      },
+      {
+        "date": "2026-10-15",
+        "seconds": 0
+      },
+      {
+        "date": "2026-10-16",
+        "seconds": 0
+      },
+      {
+        "date": "2026-10-17",
+        "seconds": 8787
+      },
+      {
+        "date": "2026-10-18",
+        "seconds": 12755
+      },
+      {
+        "date": "2026-10-19",
+        "seconds": 6360
+      },
+      {
+        "date": "2026-10-20",
+        "seconds": 8961
+      },
+      {
+        "date": "2026-10-21",
+        "seconds": 2665
+      },
+      {
+        "date": "2026-10-22",
+        "seconds": 4385
+      },
+      {
+        "date": "2026-10-23",
+        "seconds": 9090
+      },
+      {
+        "date": "2026-10-24",
+        "seconds": 5438
+      },
+      {
+        "date": "2026-10-25",
+        "seconds": 6689
+      },
+      {
+        "date": "2026-10-26",
+        "seconds": 0
+      },
+      {
+        "date": "2026-10-27",
+        "seconds": 1314
+      },
+      {
+        "date": "2026-10-28",
+        "seconds": 487
+      },
+      {
+        "date": "2026-10-29",
+        "seconds": 486
+      },
+      {
+        "date": "2026-10-30",
+        "seconds": 2447
+      },
+      {
+        "date": "2026-10-31",
+        "seconds": 326
+      },
+      {
+        "date": "2026-11-01",
+        "seconds": 488
+      },
+      {
+        "date": "2026-11-02",
+        "seconds": 0
+      },
+      {
+        "date": "2026-11-03",
+        "seconds": 833
+      },
+      {
+        "date": "2026-11-04",
+        "seconds": 1100
+      },
+      {
+        "date": "2026-11-05",
+        "seconds": 0
+      },
+      {
+        "date": "2026-11-06",
+        "seconds": 0
+      },
+      {
+        "date": "2026-11-07",
+        "seconds": 0
+      },
+      {
+        "date": "2026-11-08",
+        "seconds": 0
+      },
+      {
+        "date": "2026-11-09",
+        "seconds": 274
+      },
+      {
+        "date": "2026-11-10",
+        "seconds": 6773
+      },
+      {
+        "date": "2026-11-11",
+        "seconds": 1705
+      },
+      {
+        "date": "2026-11-12",
+        "seconds": 991
+      },
+      {
+        "date": "2026-11-13",
+        "seconds": 244
+      }
+    ]
+  },
+  "github": {
+    "username": "Its-manpreet",
+    "public_repos": 10,
+    "followers": 7,
+    "stars": 11,
+    "repos_tracked": 8,
+    "commits_30d": 12,
+    "recent_commits": [
+      {
+        "repo": "Discord-portal-bot",
+        "message": "Added report command, fixed some bugs",
+        "date": "2026-10-25T18:33:11Z",
+        "url": "https://github.com/Its-manpreet/Discord-portal-bot/commit/6ef585e73b993d4609545c6911fa9473104b16d3"
+      },
+      {
+        "repo": "Discord-portal-bot",
+        "message": "fixed some bugs, made minor imporvements, started working on a moderation system",
+        "date": "2026-10-25T14:06:52Z",
+        "url": "https://github.com/Its-manpreet/Discord-portal-bot/commit/f8783a35c1b4da7ee6669695bb0216f2d275aaff"
+      },
+      {
+        "repo": "Discord-portal-bot",
+        "message": "Added help command, made small readme, made random linking functional",
+        "date": "2026-10-24T09:50:50Z",
+        "url": "https://github.com/Its-manpreet/Discord-portal-bot/commit/268908b1a8eb3de2b84034df25d69373028ac46f"
+      },
+      {
+        "repo": "terminalchat",
+        "message": "did some stuff",
+        "date": "2026-10-19T15:14:27Z",
+        "url": "https://github.com/Its-manpreet/terminalchat/commit/f4877e9af1a7fdfd8ac5a5cd317ca19dfd4b40d2"
+      }
+    ]
+  }
+}

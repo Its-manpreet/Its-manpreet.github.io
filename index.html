@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Dhaliwal — computer engineering, backend and cloud</title>
+<meta name="description" content="Manpreet Singh Dhaliwal builds backend systems and the things on top of them: a Discord bot serving 2,100 quotes, cloud storage on S3 and Cognito, a channel bridge that links servers together. Computer Engineering at TIET, Patiala.">
+<meta name="author" content="Manpreet Singh Dhaliwal">
+<link rel="canonical" href="https://msdhaliwal.in/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dhaliwal — computer engineering, backend and cloud">
+<meta property="og:description" content="A Discord bot serving 2,100 quotes, cloud storage on S3 and Cognito, a bridge that links Discord servers. Built and running.">
+<meta property="og:url" content="https://msdhaliwal.in/">
+<meta property="og:image" content="https://msdhaliwal.in/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#05060d">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2305060d'/%3E%3Ccircle cx='16' cy='16' r='7' fill='none' stroke='%23d7ff3f' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='16' r='2.4' fill='%23d7ff3f'/%3E%3C/svg%3E">
+<link rel="preload" href="assets/fonts/bricolage-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Manpreet Singh Dhaliwal","alternateName":"Dhaliwal","url":"https://msdhaliwal.in","email":"mailto:manpreetdhaliwal1482008@gmail.com","jobTitle":"Computer Engineering student; backend and cloud developer","address":{"@type":"PostalAddress","addressLocality":"Patiala","addressRegion":"Punjab","addressCountry":"IN"},"alumniOf":{"@type":"CollegeOrUniversity","name":"Thapar Institute of Engineering and Technology"},"knowsAbout":["Python","JavaScript","discord.js","AWS","SvelteKit","Bun","Docker"],"sameAs":["https://github.com/Its-manpreet","https://www.linkedin.com/in/manpreet-dhaliwal-521b3625a"]}
+</script>
+</head>
+<body><body>
+<i id="prog" aria-hidden="true"></i>
+<canvas id="cv" aria-hidden="true"></canvas>
+<canvas id="pcv" aria-hidden="true"></canvas>
+<svg id="dot" viewBox="-18 -18 36 36" aria-hidden="true"><path d="M18 0Q3-3 0-11-3-3-13 0-3 3 0 11 3 3 18 0Z"/></svg>
+<div id="ptag" aria-hidden="true">Hello</div>
+<div id="cur" aria-hidden="true"><svg viewBox="-13 -13 26 26"><path d="M-9-9 12 0-9 9-4 0Z"/></svg><span class="lb"></span></div>
+<header><a href="#c0">M. S. Dhaliwal</a><nav><a href="#c1">Work</a><a href="#c4">More</a><a href="#c5">Now</a><a href="#c6">Contact</a></nav></header>
+<main>
+<section class="ch" id="c0"><div class="gh" aria-hidden="true">HELLO</div>
+ <div class="tx"><p class="hi rv">Hello, I’m Manpreet</p><h1 class="name" aria-label="Dhaliwal"></h1>
+ <p class="ld rv">I’m a computer engineering student at Thapar in Patiala. I build things to find out how they work, and sometimes because the tool I needed didn’t exist.</p>
+ <p class="sm rv">Python and JavaScript mostly. Rust and C++ are next, because the problems I keep hitting live closer to the metal.</p></div>
+ <div class="chips"><span class="chip" data-cur="Drag" style="left:2%;top:8%">Python</span><span class="chip" data-cur="Drag" style="left:38%;top:0">JavaScript</span><span class="chip" data-cur="Drag" style="left:70%;top:14%">discord.js</span><span class="chip" data-cur="Drag" style="left:10%;top:42%">Bun</span><span class="chip" data-cur="Drag" style="left:44%;top:36%">SvelteKit</span><span class="chip" data-cur="Drag" style="left:74%;top:52%">AWS S3</span><span class="chip" data-cur="Drag" style="left:4%;top:76%">Docker</span><span class="chip" data-cur="Drag" style="left:36%;top:72%">Node</span><span class="chip" data-cur="Drag" style="left:64%;top:84%">Rust (learning)</span></div>
+ <div class="hint">Pick them up. Throw them.</div></section>
+<section class="ch r" id="c1"><div class="gh" aria-hidden="true">QUOTES</div>
+ <div class="tx"><span class="st live rv">Live</span><h2 class="rv">Quoter</h2>
+ <p class="b rv">A quote bot for Discord: 2,127 quotes from 803 authors across 67 tags. Nine slash commands, and a typo in a tag or a name still finds the right one — want a specific author and the bot pulls their portrait and bio from Wikipedia. Verified by Discord, listed on top.gg.</p>
+ <div class="fact rv"><span>9 commands · 53 commits</span><a href="https://dsc.gg/quoter-bot">Invite</a><a href="https://github.com/Its-manpreet/quoter-discord-bot">Source</a></div></div></section>
+<section class="ch" id="c2"><div class="gh" aria-hidden="true">CLOUD</div>
+ <div class="tx"><span class="st rv">In development</span><h2 class="rv">CloudKeep</h2>
+ <p class="b rv">Cloud storage that works: upload, download, share links and sign-in through Cognito. Files go straight to the bucket with presigned URLs, so they never pass through my server. It isn’t finished — quotas, lifecycle rules and a few edges are still open.</p>
+ <div class="fact rv"><span>SvelteKit · S3 · Cognito · presigned URLs</span><a href="https://dev.msdhaliwal.in">Dev build</a></div></div></section>
+<section class="ch r" id="c3"><div class="gh" aria-hidden="true">BRIDGE</div>
+ <div class="tx"><span class="st rv">In development</span><h2 class="rv">Discord Bridge</h2>
+ <p class="b rv">Omegle, but for Discord channels. Two servers link a channel and the conversation is shared both ways — messages cross as webhooks so they look like they were sent there, with edits, deletes and sticky notices kept in sync. Random mode pairs your channel with a stranger’s.</p>
+ <div class="fact rv"><span>Bun · discord.js · SQLite</span><a href="https://github.com/Its-manpreet/Discord-portal-bot">Source</a></div></div></section>
+<section class="ch" id="c4"><div class="gh" aria-hidden="true">MORE</div>
+ <div class="tx"><span class="st rv">Smaller things</span><h2 class="rv">Also built</h2>
+ <div class="list rv">
+  <div class="li"><b>Keyboard → controller</b><span>Hall-effect switch signals from a keyboard, read and remapped into gamepad input.</span></div>
+  <div class="li"><b>AI agent rig</b><span>Hermes, an open-source coding agent I run on my own machines to take the repeat work off me.</span></div>
+  <a class="li" href="https://github.com/Its-manpreet/maze-solver"><b>Maze Solver</b><span>BFS, DFS and A*, drawn step by step.</span></a>
+  <a class="li" href="https://chat.msdhaliwal.in"><b>Chat Room</b><span>An open room anyone can join. Live.</span></a>
+  <a class="li" href="https://github.com/Its-manpreet/Prisoners-Dilemma"><b>Prisoner’s Dilemma</b><span>Split or steal tournaments between bots.</span></a>
+  <a class="li" href="https://github.com/Its-manpreet/cdn-server"><b>CDN server</b><span>Share files across the house with one script.</span></a>
+  <a class="li" href="https://github.com/Its-manpreet/task-automation"><b>Task Automator</b><span>Runs JavaScript when an event fires.</span></a>
+  <div class="li"><b>Home server</b><span>Ubuntu and Docker Compose, running the house.</span></div>
+  <div class="li"><b>Minearth SMP</b><span>A Minecraft server I ran. Retired.</span></div>
+</div></div></section>
+<section class="ch r" id="c5"><div class="gh" aria-hidden="true">NOW</div>
+ <div class="tx"><span class="st live rv" id="upd">Updated 13 Nov</span><h2 class="rv">Now</h2>
+ <p class="b rv">First year at Thapar, building in the gaps between coursework. The numbers below come live from Hackatime and GitHub.</p>
+ <div class="stats rv"><div><b id="sw">—</b><span>coded this week</span></div><div><b id="sa">—</b><span>all time</span></div><div><b id="sl">—</b><span>most time</span></div><div><b id="sc">—</b><span>commits, 30 days</span></div></div>
+ <div class="bars rv" id="bars" aria-label="Coding time per day"></div>
+ <p class="sm rv" id="lastrepo" style="margin-top:18px;font-size:14px">&nbsp;</p>
+ <div class="fact rv"><span>One bar per day on the chart</span><a href="https://github.com/Its-manpreet">GitHub</a></div></div></section>
+<section class="ch" id="c6"><div class="gh" aria-hidden="true">HI</div>
+ <div class="tx"><h2 class="rv">Say hello</h2>
+ <p class="b rv">Hiring, building something or just curious. Email works.</p>
+ <div class="row rv"><a href="mailto:manpreetdhaliwal1482008@gmail.com">manpreetdhaliwal1482008@gmail.com</a><button id="cp" data-cur="Copy">Copy</button><a class="btnr" href="resume.html" data-cur="Open">Résumé</a></div>
+ <div class="row rv" style="font-size:16px"><a href="https://github.com/Its-manpreet">GitHub</a><a href="https://www.linkedin.com/in/manpreet-dhaliwal-521b3625a">LinkedIn</a><span>Discord its_manpreet</span></div></div></section>
+</main>
+<footer>
+  <span>© <span id="yr">2026</span> Manpreet Singh Dhaliwal · Patiala, IST</span>
+  <nav><a href="https://github.com/Its-manpreet">GitHub</a><a href="https://www.linkedin.com/in/manpreet-dhaliwal-521b3625a">LinkedIn</a><a href="resume.html">Résumé</a><a href="#c0">Top</a></nav>
+</footer>
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/vendor/ScrollTrigger.min.js"></script>
+<script src="assets/vendor/Draggable.min.js"></script>
+<script src="assets/vendor/lenis.min.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

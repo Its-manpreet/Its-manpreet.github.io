@@ -1,0 +1,35 @@
+name: Refresh live stats
+
+on:
+  schedule:
+    - cron: "17 2 * * *"   # 02:17 UTC daily (07:47 IST)
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths: ["scripts/fetch_stats.py", ".github/workflows/stats.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch Hackatime + GitHub figures
+        run: python3 scripts/fetch_stats.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit if it moved
+        run: |
+          git config user.name "stats-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- data/live.json; then
+            echo "no change today"
+            exit 0
+          fi
+          git add data/live.json
+          git commit -m "chore(stats): refresh live figures"
+          git push

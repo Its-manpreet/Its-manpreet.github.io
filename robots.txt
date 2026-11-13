@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://msdhaliwal.in/sitemap.xml
