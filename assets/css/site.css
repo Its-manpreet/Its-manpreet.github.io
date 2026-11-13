@@ -76,3 +76,21 @@ footer{position:relative;z-index:2;border-top:1px solid var(--ln);padding:26px 6
 footer nav{display:flex;gap:22px;flex-wrap:wrap}
 footer a{text-decoration:none}
 footer a:hover{color:var(--ac)}
+
+/* if three.js never arrives, the sky still has to feel like a sky */
+html.nosky #cv{display:none}
+html.nosky body:before{
+  content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.75;
+  background-image:
+    radial-gradient(1.5px 1.5px at 12% 18%, rgba(255,255,255,.9) 40%, transparent 41%),
+    radial-gradient(1.2px 1.2px at 78% 12%, rgba(255,255,255,.7) 40%, transparent 41%),
+    radial-gradient(1.6px 1.6px at 42% 72%, rgba(255,255,255,.8) 40%, transparent 41%),
+    radial-gradient(1.1px 1.1px at 88% 64%, rgba(255,255,255,.6) 40%, transparent 41%),
+    radial-gradient(1.3px 1.3px at 24% 88%, rgba(255,255,255,.7) 40%, transparent 41%),
+    radial-gradient(1.2px 1.2px at 62% 36%, rgba(255,255,255,.65) 40%, transparent 41%),
+    radial-gradient(1.4px 1.4px at 6% 54%, rgba(255,255,255,.55) 40%, transparent 41%),
+    radial-gradient(1.1px 1.1px at 94% 88%, rgba(255,255,255,.5) 40%, transparent 41%);
+  background-size:100% 100%;
+  animation:twinkle 9s ease-in-out infinite alternate}
+@keyframes twinkle{from{opacity:.5}to{opacity:.85}}
+@media (prefers-reduced-motion:reduce){html.nosky body:before{animation:none}}

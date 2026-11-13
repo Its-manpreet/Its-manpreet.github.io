@@ -76,3 +76,14 @@ GITHUB_TOKEN=ghp_… python3 scripts/fetch_stats.py   # raises the GitHub rate l
   ```bash
   python3 -m http.server 8080
   ```
+
+## If the stats stop moving
+
+The workflow needs write access to push its commit: **Settings → Actions → General → Workflow permissions → Read and write**.
+You can also run it by hand: **Actions → Refresh live stats → Run workflow**. Each successful run commits `data/live.json`,
+which triggers a new Pages deploy; the page then fetches the new numbers on the next load.
+
+Quick health check on a live site:
+
+- `https://msdhaliwal.in/data/live.json` — should return JSON with a recent `generated_at`.
+- `https://msdhaliwal.in/assets/vendor/three.module.min.js` — should return JavaScript, not a 404.

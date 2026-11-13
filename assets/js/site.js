@@ -107,8 +107,14 @@ else{
 
 /* sky: stars fly past with scroll; a point-mesh morphs per chapter */
 function startSky(){
- const cv=$('#cv');try{if(!cv.getContext('webgl'))return}catch(e){return}
- import('./assets/vendor/three.module.min.js').then(T=>{const N=160,R=1.45,S=[[],[],[],[],[],[],[]],h=i=>{const x=Math.sin(i*12.9898)*43758.5453;return x-Math.floor(x)};
+ const cv=$('#cv');
+ /* probe on a throwaway canvas: taking a context on #cv would lock it to one type and
+    make three's WebGLRenderer fail with "existing context of a different type" */
+ try{const probe=document.createElement('canvas');
+   if(!(probe.getContext('webgl2')||probe.getContext('webgl'))){document.documentElement.classList.add('nosky');return}}catch(e){document.documentElement.classList.add('nosky');return}
+ const loadThree=()=>import('./assets/vendor/three.module.min.js')
+  .catch(()=>import('https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.min.js'));
+ loadThree().then(T=>{const N=160,R=1.45,S=[[],[],[],[],[],[],[]],h=i=>{const x=Math.sin(i*12.9898)*43758.5453;return x-Math.floor(x)};
   const nm=(a,R)=>{let c=[0,0,0];for(let i=0;i<a.length;i++)c[i%3]+=a[i];c=c.map(v=>v/(a.length/3));let m=0;for(let i=0;i<a.length;i+=3){for(let k=0;k<3;k++)a[i+k]-=c[k];m=Math.max(m,Math.hypot(a[i],a[i+1],a[i+2]))}for(let i=0;i<a.length;i++)a[i]*=R/m};
   for(let i=0;i<N;i++){const t=i/N*Math.PI*2,r=2+Math.cos(3*t);S[0].push(r*Math.cos(2*t),r*Math.sin(2*t),Math.sin(3*t)*1.4)}
   for(let c=0;c<40;c++)for(let r=0;r<4;r++){const u=c/40*Math.PI*2,v=(r/3-.5)*1.2,k=1+v*Math.cos(u/2);S[1].push(k*Math.cos(u),k*Math.sin(u),v*Math.sin(u/2)*1.3)}
@@ -156,4 +162,4 @@ function startSky(){
    const tx=mob?0:side*vw*.30,ty=mob?vw*.2:0,sc2=mob?.7:1.05;g.position.x+=(tx-g.position.x)*.08;g.position.y+=(ty-g.position.y)*.08;g.scale.setScalar(sc2);
    const tilt=shape==6?.62:.35+Math.sin(t*.0004)*.15;g.rotation.x+=(tilt-g.rotation.x)*.04;
    g.rotation.y+=(shape==6?.0025:.004)+vel*.004;cam.rotation.y+=(-mx*.12-cam.rotation.y)*.04;cam.rotation.x+=(-my*.08-cam.rotation.x)*.04;rd.render(sc,cam)};
-  requestAnimationFrame(loop)}).catch(()=>{document.documentElement.classList.add('nosky')})}
+  requestAnimationFrame(loop)}).catch(err=>{console.warn('[sky] three.js did not load — using the CSS starfield instead.',err);document.documentElement.classList.add('nosky')})}
