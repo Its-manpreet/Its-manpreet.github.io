@@ -1,20 +1,24 @@
 {
-  "generated_at": "2026-11-21T09:47:25Z",
+  "generated_at": "2026-11-22T09:45:16Z",
   "hackatime": {
     "username": "MSDhaliwal",
-    "total_seconds": 102470,
+    "total_seconds": 131271,
     "languages": [
       {
         "name": "JavaScript",
-        "seconds": 39006
+        "seconds": 51382
       },
       {
         "name": "Python",
-        "seconds": 34124
+        "seconds": 34367
       },
       {
         "name": "C",
         "seconds": 8857
+      },
+      {
+        "name": "HTML",
+        "seconds": 5949
       },
       {
         "name": "Markdown",
@@ -22,11 +26,11 @@
       },
       {
         "name": "JSON",
-        "seconds": 1223
+        "seconds": 1750
       },
       {
         "name": "Text",
-        "seconds": 990
+        "seconds": 1404
       },
       {
         "name": "Shell",
@@ -37,18 +41,14 @@
         "seconds": 462
       },
       {
-        "name": "TypeScript",
-        "seconds": 184
-      },
-      {
         "name": "CSS",
-        "seconds": 9
+        "seconds": 249
       }
     ],
     "top_language": "JavaScript",
-    "top_language_seconds": 39006,
-    "week_seconds": 1794,
-    "project_count": 14,
+    "top_language_seconds": 51382,
+    "week_seconds": 30474,
+    "project_count": 16,
     "days": [
       {
         "date": "2026-10-05",
@@ -240,18 +240,40 @@
       },
       {
         "date": "2026-11-21",
-        "seconds": 360
+        "seconds": 27360
+      },
+      {
+        "date": "2026-11-22",
+        "seconds": 1801
       }
     ]
   },
   "github": {
     "username": "Its-manpreet",
-    "public_repos": 10,
+    "public_repos": 11,
     "followers": 7,
     "stars": 12,
-    "repos_tracked": 9,
-    "commits_30d": 7,
+    "repos_tracked": 10,
+    "commits_30d": 25,
     "recent_commits": [
+      {
+        "repo": "sensory-shield",
+        "message": "Windows support ig",
+        "date": "2026-11-22T00:20:45Z",
+        "url": "https://github.com/Its-manpreet/sensory-shield/commit/84fa17f242dbe72e5ab1c31a014110d872022371"
+      },
+      {
+        "repo": "sensory-shield",
+        "message": "Final",
+        "date": "2026-11-21T22:40:13Z",
+        "url": "https://github.com/Its-manpreet/sensory-shield/commit/a9d7d3579592795ed29df6a3bc871447145d8c4c"
+      },
+      {
+        "repo": "sensory-shield",
+        "message": "No audio hitch at sound start; visual protection about twice as fast",
+        "date": "2026-11-21T14:40:51Z",
+        "url": "https://github.com/Its-manpreet/sensory-shield/commit/edb8ab47e5399573ff06f445445453fc8b9ee9b6"
+      },
       {
         "repo": "Its-manpreet.github.io",
         "message": "Fixed threejs bug",
