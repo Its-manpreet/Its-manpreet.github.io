@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-24T12:27:48Z",
+  "generated_at": "2026-11-25T11:16:08Z",
   "hackatime": {
     "username": "MSDhaliwal",
-    "total_seconds": 131391,
+    "total_seconds": 131756,
     "languages": [
       {
         "name": "JavaScript",
@@ -47,8 +47,8 @@
     ],
     "top_language": "JavaScript",
     "top_language_seconds": 51382,
-    "week_seconds": 29740,
-    "project_count": 16,
+    "week_seconds": 30104,
+    "project_count": 17,
     "days": [
       {
         "date": "2026-10-05",
@@ -252,6 +252,10 @@
       },
       {
         "date": "2026-11-24",
+        "seconds": 365
+      },
+      {
+        "date": "2026-11-25",
         "seconds": 0
       }
     ]
@@ -262,7 +266,7 @@
     "followers": 7,
     "stars": 12,
     "repos_tracked": 10,
-    "commits_30d": 23,
+    "commits_30d": 21,
     "recent_commits": [
       {
         "repo": "sensory-shield",
@@ -293,18 +297,6 @@
         "message": "redo full site",
         "date": "2026-11-13T20:20:21Z",
         "url": "https://github.com/Its-manpreet/Its-manpreet.github.io/commit/040e3b082565ed3fcefdf35cefc0836ca3c04208"
-      },
-      {
-        "repo": "Discord-portal-bot",
-        "message": "Added report command, fixed some bugs",
-        "date": "2026-10-25T18:33:11Z",
-        "url": "https://github.com/Its-manpreet/Discord-portal-bot/commit/6ef585e73b993d4609545c6911fa9473104b16d3"
-      },
-      {
-        "repo": "Discord-portal-bot",
-        "message": "fixed some bugs, made minor imporvements, started working on a moderation system",
-        "date": "2026-10-25T14:06:52Z",
-        "url": "https://github.com/Its-manpreet/Discord-portal-bot/commit/f8783a35c1b4da7ee6669695bb0216f2d275aaff"
       }
     ]
   }
